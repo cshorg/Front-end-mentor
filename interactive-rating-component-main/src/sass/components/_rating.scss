@@ -1,0 +1,114 @@
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    height: 420px;
+    background-color: $darkblue;
+    border-radius: 2rem;
+    padding: 2rem;
+    .rating-header {
+        width: 50px;
+        min-height: 50px;
+        border-radius: 2rem;
+        background-color: $mediumgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rating-info {
+        margin-top: 2rem;
+        h1 {
+            color: #fff;
+            font-size: 1.85rem;
+        }
+        p {
+            margin-top: .5rem;
+            font-size: 1rem;
+            color: $lightgrey;
+        }
+    }
+    .rating-list {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        list-style: none;
+        color: $lightgrey;
+        margin-top: 2rem;
+        .selected {
+            background-color: $lightgrey !important;
+            color: $white;
+        }
+        li {
+            height: 50px;
+            width: 50px;
+            background-color: $mediumgrey;
+            border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: $primary;
+                cursor: pointer;
+                color: $white;
+            }
+        }
+    }
+    .submit-btn {
+        margin-top: 2rem;
+        text-decoration: none;
+        border: none;
+        background-color: $primary;
+        color: $white;
+        padding: 1rem;
+        border-radius: 2rem;
+        min-width: 100%;
+        text-transform: uppercase;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+            background-color: $white;
+            color: $primary;
+        }
+    }
+}
+
+.thankyou-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    height: 420px;
+    background-color: $darkblue;
+    border-radius: 2rem;
+    padding: 2rem;
+    .thankyou-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .thankyou-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        padding: 0px 12px;
+        .thankyou-selected {
+            color: $primary;
+            background-color: $mediumgrey;
+            padding: .5rem 1.2rem;
+            border-radius: 2rem;
+        }
+        .thankyou-title {
+            margin-top: 2rem;
+            font-size: 1.8rem;
+            color: $white;
+        }
+        .thankyou-desc {
+            color: $lightgrey;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+}
+

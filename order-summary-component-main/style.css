@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+}
+
+h4 {
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+}
+
+a:visited {
+    text-decoration: none;
+    color: hsl(223, 47%, 23%); 
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.main-container {
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.main-container > img {
+    max-width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.order-summary {
+    margin-bottom: 1.25rem;
+}
+
+.order-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin: 2rem 0 1rem 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.annual-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.annual-info {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.annual-title {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.annual-plan-data > p {
+    float: left;
+}
+
+.change-btn {
+    font-weight: 700;
+}
+
+.change-btn:hover {
+    cursor: pointer;
+    color:  hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proceed-btn {
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    min-width: 100%;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+}
+
+.proceed-btn:hover {
+    cursor: pointer;
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn {
+    border-radius: 1rem;
+    margin: 1rem 0 2rem 0;
+    padding: 1rem;
+    border: none;
+    min-width: 100%;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    background-color: #fff;
+}
+
+.cancel-btn:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 425px) {
+    .main-container {
+        max-width: 85%;
+    }
+}
