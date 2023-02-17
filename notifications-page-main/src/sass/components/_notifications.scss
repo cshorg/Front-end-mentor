@@ -1,0 +1,38 @@
+main {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: $white;
+    padding: 2rem;
+    margin: 10px;
+    border-radius: 1rem;
+    max-width: 730px;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        .header-notifications {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: $vdarkblue;
+            gap: 14px;
+            .notification-value {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3px 12px;
+                border-radius: 4px;
+                background-color: $blue;
+                color: $white;
+                font-weight: 800;
+            }
+        }
+        p {
+            color: $grayblue;
+            &:hover {
+                cursor: pointer;
+                color: $blue;
+            }
+        }
+    }
+}

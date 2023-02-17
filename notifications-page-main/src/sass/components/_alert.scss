@@ -1,0 +1,75 @@
+.alert-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 1rem;
+    .alert-info {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        .alert-image {
+            max-width: 45px;
+            max-height: 45px;
+        }
+        .alert-data {
+            p {
+
+                color: $darkblue;
+                strong {
+                    color: $vdarkblue;
+                    &:hover {
+                        cursor: pointer;
+                        color: $blue;
+                    }
+                }
+                b {
+                    &:hover {
+                        cursor: pointer;
+                        color: blue;
+                    }
+                }
+            }
+            .alert-time {
+                margin-top: 2px;
+                color: $grayblue;
+            }
+            .alert-comment {
+                background-color: $white;
+                color: $darkblue;
+                margin-top: 8px;
+                padding: 16px;
+                border-radius: 4px;
+                border: 1px solid $grayishblue3;
+                &:hover {
+                    background-color: $grayishblue3;
+                    cursor: pointer;
+                }
+            }
+            .user-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+    .alert-picture {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.checked {
+    background-color: $grayishblue1;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.alert-dot {
+    min-width: 8px;
+    height: 8px;
+    background-color: $red;
+    border-radius: 50%;
+}
