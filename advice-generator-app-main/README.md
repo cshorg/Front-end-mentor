@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Vercel](https://advice-generator-2uy9d3iyh-cshorg.vercel.app/)
+- Live Site URL: [Vercel](https://advice-generator-app-git-main-cshorg.vercel.app/)
 
 ## My process
 
