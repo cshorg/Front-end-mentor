@@ -6,7 +6,7 @@ function ProfileCard({ tab, handleTab }) {
     <section className='profile-container'>
 
 			<div className='profile-header'>
-				<img src="public/images/image-jeremy.png" alt="Jeremy" />
+				<img src="./images/image-jeremy.png" alt="Jeremy" />
 				<div className='profile-info'>
 					<p>Report for</p>
 					<h1>Jeremy Robson</h1>
