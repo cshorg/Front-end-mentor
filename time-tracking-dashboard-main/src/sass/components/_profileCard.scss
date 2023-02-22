@@ -1,0 +1,48 @@
+.profile-container {
+    background-color: $n-dark-blue;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    .profile-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 1rem;
+        padding: 1.75rem;
+        background-color: $p-blue;
+        .profile-info {
+            h1 {
+                margin-top: .3rem;
+                font-weight: 300;
+                color: $white;
+            }
+            p {
+                color: $n-pale-blue;
+            }
+        }
+        img {
+            max-width: 80px;
+            border-radius: 50%;
+            border: 3px solid $white;
+        }
+    }
+    .profile-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.75rem 0rem;
+        .btn { 
+            font-size: 1.1rem;
+            border: none;
+            width: 100%;
+            color: $n-desaturated-blue;
+            background-color: $n-dark-blue;
+            &:hover {
+                cursor: pointer;
+                color: $white;
+            }
+        }
+        .active {
+            color: $white;
+        }
+    }
+}

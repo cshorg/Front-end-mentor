@@ -1,0 +1,103 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 1.5rem 0rem 0rem;
+}
+
+.listing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    margin: .6rem 0rem;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 1110px;
+    .listing-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .listing-logo {
+            max-width: 88px;
+            max-height: 88px;
+        }
+        .listing-info {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-left: 1rem;
+            gap: .75rem;
+            .info-header {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .info-company {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $darkcyan;
+                }
+                .info-new {
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: $darkcyan;
+                    font-size: 14px;
+                    padding: 6px 8px 4px 8px;
+                    border-radius: 1rem;
+                }
+                .info-featured {
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: $vdarkgraycyan;
+                    font-size: 14px;
+                    padding: 6px 8px 4px 8px;
+                    border-radius: 1rem;
+                }
+            }
+            .info-position {
+                font-size: 22px;
+                font-weight: 700;
+                color: $vdarkgraycyan;
+                &:hover {
+                    cursor: pointer;
+                    color: $darkcyan  ;
+                }
+            }
+            .info-footer {
+                display: flex;
+                align-items: center;
+                gap:.8rem;
+                color: $darkgraycyan;
+                .grey-dot {
+                    width: 5px;
+                    height: 5px;
+                    background-color: $darkgraycyan;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .listing-lang {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .lang {
+            background-color: $lightgraycyan;
+            padding: 8px 8px 6px 8px;
+            border-radius: 4px;
+            color: $darkcyan;
+            font-weight: 700;
+            &:hover {
+                color: $white;
+                background-color: $darkcyan;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.featured {
+    border-left: 4px solid $darkcyan;
+}

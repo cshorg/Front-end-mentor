@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+$mobile: 375px;
+$desktop: 1440px;
+
+//primary color
+
+$p-blue: hsl(246, 80%, 60%);
+$p-light-red: hsl(15, 100%, 70%);
+$p-soft-blue: hsl(195, 74%, 62%);
+$p-red: hsl(348, 100%, 68%);
+$p-lime-green: hsl(145, 58%, 55%);
+$p-violet: hsl(264, 64%, 52%);
+$p-soft-orange: hsl(43, 84%, 65%);
+$white: #fff;
+
+//neutral
+
+$n-very-dark-blue: hsl(226, 43%, 10%);
+$n-dark-blue: hsl(235, 46%, 20%);
+$n-desaturated-blue: hsl(235, 45%, 61%);
+$n-pale-blue: hsl(236, 100%, 87%);
+
+$extra-blue: #34397b;
+
+//font
+
+$font-family: 'Rubik', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: $white;
+    background-color: $n-very-dark-blue;
+    font-family: $font-family;
+}
+
+main {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1100px) {
+    main {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card-container {
+        grid-template-columns: 270px 270px 270px;
+        grid-template-rows: auto auto;
+    }
+
+    .profile-header {
+        display: block !important;
+        max-width: 270px;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+        p {
+            margin-top: 1.75rem;
+        }
+    }
+
+    .profile-footer {
+        flex-direction: column;
+        gap: 1rem;
+        .btn {
+            text-align: left;
+            padding-left: 1.75rem;
+        }
+    }
+
+    .card-section {
+        .card-data {
+            min-height: 210px;
+            gap: .6rem;
+            .card-hours {
+                flex-direction: column;
+                align-items: start !important;
+                margin-top: 1rem;
+                .card-current-hours {
+                    font-size: 3rem !important;
+                }
+                p {
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+}
