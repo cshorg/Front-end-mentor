@@ -3,6 +3,9 @@
     justify-content: center;
     position: relative;
     button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         top: -6px;
         width: 60px;
@@ -10,9 +13,6 @@
         border: none;
         border-radius: 50%;
         background-color: $neon-green;
-        background-image: url('./images/icon-dice.svg');
-        background-repeat: no-repeat;
-        background-position: center;
         &:hover {
             cursor: pointer;
             box-shadow: hsla(150, 100%, 66%, 0.5) 0px 0px 25px;

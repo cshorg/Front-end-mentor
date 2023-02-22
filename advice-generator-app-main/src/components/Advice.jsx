@@ -32,9 +32,9 @@ function Advice() {
 					</div>
 				</section>
 			)}
-
-			<div className='divider'></div>
-
+			<div className='divider'>
+				<img src="public/images/pattern-divider-desktop.svg" alt="divider" />
+			</div>
 			<section>
 				<Button handleClick={handleClick} />
 			</section>

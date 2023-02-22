@@ -4,12 +4,12 @@
     background-color: $dark-g-blue;
     max-width:450px;
     .divider {
-        background-image: url('./images/pattern-divider-desktop.svg');
-        background-repeat: no-repeat;
-        background-position: center;
         margin-top: 1.5rem;
         margin-bottom: 2rem;
         height: 20px;
+        img {
+            max-width: 100%;
+        }
     }
     .container-data {
         .advice-title {
