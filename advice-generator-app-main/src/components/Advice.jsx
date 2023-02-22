@@ -16,6 +16,10 @@ function Advice() {
       })
 	}
 
+	useEffect(() => {
+    handleClick();
+  }, [])
+
   return (
     <main className='container'>
 			{data && (
