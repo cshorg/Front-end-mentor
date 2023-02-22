@@ -1,0 +1,30 @@
+.container {
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background-color: $dark-g-blue;
+    max-width:450px;
+    .divider {
+        background-image: url('./images/pattern-divider-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        height: 20px;
+    }
+    .container-data {
+        .advice-title {
+            font-size: 11px;
+            letter-spacing: 4px;
+            margin: 1rem 0rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: $neon-green;
+        }
+        .advice-quote {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            color: $light-cyan;
+        }
+    }
+}
