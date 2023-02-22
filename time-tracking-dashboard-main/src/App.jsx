@@ -6,7 +6,7 @@ import './sass/app.scss'
 
 function App() {
   const [tab, setTab] = useState('monthly')
-  const [data] = useFetch('src/assets/data/data.json')
+  const [data] = useFetch('./data/data.json')
   const timeframeMap = {
     daily: 'daily',
     weekly: 'weekly',
