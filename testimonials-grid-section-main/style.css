@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+main {
+    display: grid;
+    grid-gap: 1.2rem;
+    padding: 2.3rem;
+}
+
+section {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: relative;
+    grid-template-columns: auto;
+    grid-auto-rows: auto auto auto auto auto;
+}
+
+.section-card {
+    border-radius: .5rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.section-card > h2{
+    margin-top: 1rem;
+}
+
+.section-card > p{
+    margin-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-info > h4 {
+    font-size: 14px;
+    font-weight:100;
+}
+
+.card-info > p {
+    font-size: 12px;
+    font-weight:100;
+}
+
+.card-background {
+    position: absolute;
+    visibility: hidden;
+}
+
+.profile-img{
+    border-radius: 50%;
+    max-width: 34px;
+}
+
+.verified {
+    font-size: 12px !important;
+}
+
+.light > p {
+    color: hsl(217, 19%, 35%);
+    font-size: 14px;
+}
+
+.light > h2 {
+    color: hsl(217, 19%, 35%);
+    font-size: 20px;
+}
+
+.light > h4 {
+    color: hsl(217, 19%, 35%);
+}
+
+.dark > p  {
+    color: hsl(0, 0%, 81%);
+    font-size: 14px;
+}
+
+.dark > h2 {
+    color: hsl(210, 46%, 95%);
+    font-size: 20px;
+}
+
+.dark > h4 {
+    color: hsl(210, 46%, 95%);
+}
+
+.bg {
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 40px
+}
+
+@media screen and (min-width: 1025px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 0rem 10.5rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-span-2 {
+        grid-column: span 2;
+    }
+
+    .kira {
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
