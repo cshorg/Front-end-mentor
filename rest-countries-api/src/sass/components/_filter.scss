@@ -1,0 +1,89 @@
+.filter-container {
+  width: 200px;
+  height: 48px;
+  font-size: 12px;
+  border-radius: .4rem;
+  background-color: $card-color;
+  box-shadow: $box-shadow;
+  &:hover {
+    cursor: pointer;
+  }
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.6rem;
+    strong {
+      text-transform: capitalize;
+    }
+  }
+  .filter-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: .4rem;
+    padding: 1rem .6rem;
+    border-radius: .4rem;
+    background-color: $card-color;
+    box-shadow: $box-shadow;
+    z-index: 2;
+    button {
+      text-align: left;
+      margin: .2rem;
+      width: 80%;
+      border: none;
+      color: $text-color;
+      background-color: $card-color;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// .filter-container {
+//   display: flex;
+//   align-items: center;
+//   max-width: 200px;
+//   min-height: 48px;
+//   font-size: 12px;
+//   margin-left: 1rem;
+//   margin-top: 2rem;
+//   border-radius: 0.4rem;
+//   background-color: $card-color;
+//   box-shadow: $box-shadow;
+//   &:hover {
+//     cursor: pointer;
+//   }
+//   .filter-header {
+//     display: flex;
+//     align-items: center;
+//     gap: 4rem;
+//     padding: 0px 22px;
+//   }
+//   .filter-list {
+//     display: flex;
+//     flex-direction: column;
+//     position: absolute;
+//     border-radius: 0.4rem;
+//     padding: 14px 22px;
+//     top: 240px;
+//     width: 200px;
+//     background-color: $card-color;
+//     box-shadow: $box-shadow;
+//     z-index: 2;
+//     button {
+//       text-align: left;
+//       border: none;
+//       font-size: 12px;
+//       margin: 6px 0px;
+//       color: $text-color;
+//       background-color: $card-color;
+//       &:hover {
+//         cursor: pointer;
+//         color: rgba(227, 227, 227, 0.951);
+//       }
+//     }
+//   }
+// }

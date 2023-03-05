@@ -1,0 +1,43 @@
+.country-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  z-index: 1;
+  .card-container {
+    width: 264px;
+    height: 336px;
+    border-radius: 0.4rem;
+    background-color: $card-color;
+    box-shadow: $box-shadow;
+    &:hover {
+      cursor: pointer;
+    }
+    .card-country-flag {
+      img {
+        height: 160px;
+        width: 264px;
+        border-radius: 0.4rem 0.4rem 0rem 0rem;
+        z-index: 1;
+      }
+    }
+    .card-info {
+      margin: 1rem 1.5rem;
+      h3 {
+        max-height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .card-stats {
+        margin-top: 1rem;
+        .data {
+          display: flex;
+          margin-top: 0.3rem;
+          font-weight: 600;
+          p {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

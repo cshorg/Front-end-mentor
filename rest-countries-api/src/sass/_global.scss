@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+$mobile: 375px;
+$desktop: 1440px;
+
+$home-page-font-size: 14px;
+$detail-page-font-size: 16px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.light {
+  --background-color: hsl(0, 0%, 98%);
+  --card-color: white;
+  --text-color: hsl(200, 15%, 8%);
+  --input-color: white;
+}
+
+.dark {
+  --background-color: hsl(207, 26%, 17%);
+  --card-color: hsl(209, 23%, 22%);
+  --text-color: hsl(0, 0%, 98%);
+  --input-color: hsl(209, 23%, 22%);
+}
+
+$background-color: var(--background-color);
+$card-color: var(--card-color);
+$text-color: var(--text-color);
+$input-color: var(--input-color);
+
+$box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 8px;
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  &:visited {
+    text-decoration: none;
+    color: $text-color;
+  }
+  &:focus {
+    text-decoration: none;
+    color: $text-color;
+  }
+  &:active {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.search-bar {
+  padding-top: 8rem;
+}
+
+.country-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 425px) {
+  .country-container {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 6rem !important;
+  }
+}
+
+@media screen and (min-width: $mobile) and (max-width: 1023px) {
+  .filter-container {
+    margin: 2rem 0rem 0rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 0rem 3rem !important;
+    h5 {
+      font-size: 1.6rem;
+    }
+  }
+  .search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 3rem 1rem 2rem;
+  }
+  .country-container {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 6rem !important;
+  }
+  .input-container {
+    input {
+      width: 480px !important;
+    }
+  }
+}

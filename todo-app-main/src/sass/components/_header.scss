@@ -1,0 +1,19 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.4rem;
+  max-height: 100px;
+  .header-color {
+    color: $text-color;
+  }
+  h1 {
+    padding-top: 6px;
+    letter-spacing: 0.4rem;
+    font-size: 1.75rem;
+  }
+  input {
+    max-width: 22px;
+    max-height: 22px;
+  }
+}

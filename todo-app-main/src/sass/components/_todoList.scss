@@ -1,0 +1,80 @@
+.list-container {
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  background-color: $secondary-bg-color;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 29px 0px;
+  hr {
+    min-width: 320px;
+    border: 0;
+    border-top: 1px solid $third-text-color;
+    padding: 0;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    padding: 0.3rem 1rem;
+    color: $secondary-text-color;
+    .list-icon-cross {
+      img {
+        width: 12px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .data {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  .list-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    padding: 0.3rem 1rem;
+    font-size: 12px;
+    color: $secondary-text-color;
+    .completed {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .check-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-color: $secondary-bg-color;
+    border: 1px solid $secondary-text-color;
+    border-radius: 50%;
+    cursor: pointer;
+    .check-round {
+      width: 16px;
+      height: 16px;
+      background-color: $secondary-bg-color;
+      border-radius: 50%;
+    }
+    input {
+      width: 0;
+      height: 0;
+      opacity: 0;
+      position: absolute;
+      cursor: pointer;
+      &:checked + .check-round {
+        background-image: url("public/images/icon-check.svg"),
+          linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
