@@ -1,5 +1,6 @@
 .input-container {
   margin-left: 2px;
+  padding-right: 0.8rem;
   .input-wrapper {
     display: flex;
     align-items: center;
@@ -9,7 +10,7 @@
     }
     input {
       padding-left: 65px;
-      min-width: 345px;
+      min-width: 343px;
       min-height: 48px;
       border: none;
       border-radius: 0.4rem;

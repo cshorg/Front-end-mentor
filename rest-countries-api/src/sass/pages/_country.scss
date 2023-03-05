@@ -1,0 +1,59 @@
+.country {
+  margin: 8rem 1.8rem 0rem 1rem;
+  color: $text-color;
+  .country-data {
+    margin-top: 4rem;
+    .country-flag {
+      img {
+        max-width: 320px;
+        max-height: 229px;
+        border-radius: 0.4rem;
+      }
+    }
+    .country-side-panel {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin-top: 2rem;
+      }
+      .country-side-panel-data {
+        .country-stats {
+          margin-top: 2rem;
+          p {
+            margin-top: 0.5rem;
+          }
+        }
+        .country-data-panel {
+          margin-top: 2.5rem;
+          .country-currencies {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+          }
+          .country-languages {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+      .country-borders {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        gap: 1rem;
+        .border-header {
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .border-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

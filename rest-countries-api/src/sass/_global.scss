@@ -32,7 +32,7 @@ $card-color: var(--card-color);
 $text-color: var(--text-color);
 $input-color: var(--input-color);
 
-$box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 8px;
+$box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
 
 a {
   text-decoration: none;
@@ -59,22 +59,28 @@ a {
   color: $text-color;
 }
 
-.search-bar {
-  padding-top: 8rem;
-}
-
 .country-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 8rem 3rem 0rem 3rem;
+  .country-filtering {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .countries {
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 425px) {
   .country-container {
     flex-direction: row !important;
     flex-wrap: wrap;
-    gap: 6rem !important;
+    gap: 4rem !important;
   }
 }
 
@@ -85,6 +91,31 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .country {
+    margin-left: 3rem !important;
+    .country-data {
+      display: flex;
+      align-items: center;
+      margin-top: 4rem;
+      margin-right: 3rem;
+      .country-side-panel {
+        margin-left: 8rem;
+        .country-side-panel-data {
+          display: flex;
+          gap: 8rem;
+          .country-data {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+          }
+        }
+      }
+      img {
+        max-width: 560px !important;
+        max-height: 400px !important;
+      }
+    }
+  }
   .navbar {
     padding: 0rem 3rem !important;
     h5 {
@@ -99,11 +130,25 @@ a {
   .country-container {
     flex-direction: row !important;
     flex-wrap: wrap;
-    gap: 6rem !important;
+    gap: 4rem !important;
+    .country-filtering {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .input-container {
+        margin-left: -18px;
+      }
+    }
   }
   .input-container {
     input {
       width: 480px !important;
     }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .countries {
+    gap: 4.35rem !important;
   }
 }

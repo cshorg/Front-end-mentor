@@ -1,13 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { MainContext } from "../context/MainContext"
 
-function Button({ text, link }) {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+
+function Button({ text, link, icon, style }) {
+  const { clearQuery } = useContext(MainContext)
+
   return (
-    <Link to={link}>
+    <Link to={link} onClick={clearQuery}>
       <div className="button-container">
-        {text}
+        {icon && <FontAwesomeIcon icon={faArrowLeft} />}
+        {style === false ? (
+          <div>{text}</div>
+        ) : (
+          <div className="button-style">{text}</div>
+        )}
       </div>
     </Link>
-  );
+  )
 }
 
-export default Button;
+export default Button
