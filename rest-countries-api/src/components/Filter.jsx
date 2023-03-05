@@ -44,7 +44,7 @@ function Filter() {
             Africa
           </button>
           <button
-            onClick={() => regionChange("america")}
+            onClick={() => regionChange("americas")}
             className="filter-list-item"
           >
             America
