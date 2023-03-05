@@ -47,7 +47,7 @@ function Filter() {
             onClick={() => regionChange("americas")}
             className="filter-list-item"
           >
-            America
+            Americas
           </button>
           <button
             onClick={() => regionChange("asia")}
