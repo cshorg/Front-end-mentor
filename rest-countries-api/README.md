@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Link [Vercel](https://your-live-site-url.com)
+- Live Link [Vercel](https://rest-countries-api-cshorg.vercel.app/)
 
 ## My process
 
@@ -42,12 +42,13 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Sass
 - Flexbox
 - Mobile-first workflow
 - Local Storage
 - Context
 - React Router
-- [Next.js](https://nextjs.org/) - React framework
+- React
 
 ### What I learned
 

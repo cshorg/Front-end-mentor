@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch"
 const MainContext = createContext()
 
 function MainContextProvider({ children }) {
-  const [data] = useFetch("src/data/data.json")
+  const [data] = useFetch("./data.json")
   const [query, setQuery] = useState("")
   const [byRegion, setByRegion] = useState("")
 
